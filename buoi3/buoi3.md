@@ -110,5 +110,6 @@ create table tblPhieuTra(
 Diagram : 
 
 
+<img width="587" alt="dia" src="https://user-images.githubusercontent.com/72613060/135356355-adeab68d-9f01-42d5-b27d-d4cfa8737ce9.png">
 
 
