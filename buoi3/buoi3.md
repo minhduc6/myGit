@@ -2,109 +2,59 @@
 
 Sách : 
 
-create table tblSach (
-	id int primary key  AUTO_INCREMENT,
-    tenSach varchar(50) not null,
-    soTrang int not null,
-    namXuatBan year,
-    nhaXuatBan varchar(20),
-    tinhTrang varchar(20),
-    viTri varchar(20)
-);
+<img width="256" alt="sach" src="https://user-images.githubusercontent.com/72613060/135356932-0d468f87-0c25-45a4-85ec-fef64c14b8a2.png">
+
 
 Thể loại :
-create table tblTheLoai(
-    id int primary key  AUTO_INCREMENT,
-    tenTheLoai varchar(20)
-);
+
+<img width="280" alt="theloai" src="https://user-images.githubusercontent.com/72613060/135356946-69dd1c66-442c-4d65-b10a-c793fae370e8.png">
+
 
 Thể loại và Sách có quan hệ n-n nên ta tạo bảng trung gian tblSach_TheLoai :
 
-create table tblSach_TheLoai(
-    id_sach int  not null,
-    id_tloai int not null,
-    FOREIGN KEY (id_sach) references tblSach(id),
-    FOREIGN KEY  (id_tloai) references tblTheLoai(id)
-);
+<img width="338" alt="sach_theloai" src="https://user-images.githubusercontent.com/72613060/135356958-a610092e-b05e-4ad4-a0fd-3ab91d67777b.png">
+
 
 Tác giả :
-create table tblTacGia(
-   id int primary key  AUTO_INCREMENT,
-   tenTG varchar(30) not null,
-   ngaySinh date ,
-   queQuan text,
-   moTa text
-);
+
+<img width="272" alt="tacgia" src="https://user-images.githubusercontent.com/72613060/135356981-6866fd26-f2c0-487d-9429-75d2841527d2.png">
+
 
 Tác Giả và Sách có quan hệ n-n nên ta tạo bảng trung gian tblSach_Tgia :
-create table tblSach_Tgia(
-   id_sach int  not null,
-   id_tg  int not null,
-   FOREIGN KEY (id_sach) references tblSach(id),
-   FOREIGN KEY  (id_tg) references tblTacGia(id)
-);
+
+
+<img width="312" alt="tacgia_sach" src="https://user-images.githubusercontent.com/72613060/135356991-24d9466c-851d-453b-81aa-7b31ee8e74ef.png">
+
 
 Sách có quan hệ 1 - n với tái bản nên ta có : 
-create table tblTaiBan(
-  id int primary key  AUTO_INCREMENT,
-  id_sach int not null,
-  nam  date ,
-  FOREIGN KEY (id_sach) references tblSach(id)
-);
+
+
+<img width="296" alt="taiban" src="https://user-images.githubusercontent.com/72613060/135357002-e724639c-1f39-4af2-b8bc-b4ffdcf58d0e.png">
 
 Nhân Viên :
-create table tblNhanVien (
-   id int primary key  AUTO_INCREMENT,
-   tenNV varchar(30) not null,
-   ngaySinh date ,
-   gioiTinh nvarchar(10) ,
-   diachi text,
-   sdt varchar(20),
-   email varchar(30),
-   avatar varchar(50)
-);
+
+<img width="263" alt="nhanvien" src="https://user-images.githubusercontent.com/72613060/135357014-629d6ee8-c9bc-448c-9235-fa49d6f9ebcd.png">
+
 
 Độc Giả :
-create table tblDocGia (
-   id int primary key  AUTO_INCREMENT,
-   tenDG varchar(30) not null,
-   ngaySinh date ,
-   gioiTinh nvarchar(10) ,
-   diachi text,
-   sdt varchar(20),
-   email varchar(30)
-);
+
+
+<img width="255" alt="docgia" src="https://user-images.githubusercontent.com/72613060/135357020-c0026b2b-0424-4531-b9ce-1ada0a2d3159.png">
+
 
 Phiếu mượn  được quản lý nhiều nhân viên và được mượn nhiều từ độc giả : 
 
-create table tblPhieuMuon(
-   id int primary key  AUTO_INCREMENT,
-   id_DG int not null,
-   id_NV int not null,
-   ngayMuon datetime not null,
-   ngayTra datetime not null,
-   FOREIGN KEY (id_DG) references tblDocGia(id),
-   FOREIGN KEY  (id_NV) references tblNhanVien(id)
-);
+<img width="329" alt="phieumuon" src="https://user-images.githubusercontent.com/72613060/135357072-cf25f3a9-6ffe-4300-99e9-f3a0d43629fb.png">
 
 Chi tiết phiếu mượn để biết mượn bao nhiêu sách có quan hệ 1  - n với Sách :
 
-create table tblChitiet_Muon(
-    id_phieuMuon int not null,
-    id_sach int not null,
-    soLuong int,
-	FOREIGN KEY (id_phieuMuon) references tblPhieuMuon(id),
-	FOREIGN KEY (id_sach) references tblSach(id)
-);
+<img width="358" alt="chitietphieumuon" src="https://user-images.githubusercontent.com/72613060/135357085-c7a5865a-057a-44e9-a2c3-0e2a1fa80384.png">
+
 
 Phiếu Trả có quan hệ 1 - 1 Phiếu Mượn :
 
-create table tblPhieuTra(
-   id int primary key  AUTO_INCREMENT,
-   id_phieuMuon int not null,
-   ngayTra datetime,
-   FOREIGN KEY (id_phieuMuon) references tblPhieuMuon(id)
-)
+<img width="381" alt="phieutra" src="https://user-images.githubusercontent.com/72613060/135357096-38e402b5-c0aa-43a1-abd7-739e40ae8ea2.png">
+
 
 
 Diagram : 
