@@ -62,4 +62,155 @@ Diagram :
 
 <img width="587" alt="dia" src="https://user-images.githubusercontent.com/72613060/135356355-adeab68d-9f01-42d5-b27d-d4cfa8737ce9.png">
 
+insert into tbltheloai(id,tenTheLoai)
+values (1,'VAN HOC');
+
+insert into tbltheloai(id,tenTheLoai)
+values (2,'KINH TE');
+
+insert into tbltheloai(id,tenTheLoai)
+values (3,'Ngoai Ngu');
+
+insert into tbltheloai(id,tenTheLoai)
+values (4,'SGK');
+
+insert into tbltheloai(id,tenTheLoai)
+values (5,'KY NANG SONG');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (1,'NHA GIA KIM' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D18');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (2,'YOUR NAME' , 216 , 2019 ,'NXB GIAO DUC' , 'DEP' ,'D19');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (3,'KINH TE VI MO' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D20');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (4,'CHUNG KHOAN' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D21');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (5,'TOEIC 450' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D18');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (6,'TOEIC 700' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D40');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (7,'TV 1' , 30 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D90');
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (8,'TOAN 2' , 50 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D18');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (9,'DAC NHAN TAM' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D88');
+
+insert into tblsach(id,tenSach,soTrang,namXuatBan,nhaXuatBan,tinhTrang,viTri)
+values (10,'TOI TU HOC' , 200 , 2014 ,'NXB GIAO DUC' , 'DEP' ,'D8');
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (1,1);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (2,1);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (3,2);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (4,2);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (5,3);
+insert into tblsach_theloai(id_sach,id_tloai)
+values (6,3);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (7,4);
+
+insert into tblsach_theloai(id_sach,id_tloai)
+values (8,4);
+insert into tblsach_theloai(id_sach,id_tloai)
+values (9,5);
+insert into tblsach_theloai(id_sach,id_tloai)
+values (10,5);
+
+insert into tbltacgia(id,tenTG,ngaySinh,queQuan,moTa)
+values (1,'Dale Carnegie','1898-06-11','ENGLAND','TL');
+
+insert into tbltacgia(id,tenTG,ngaySinh,queQuan,moTa)
+values (2,'Robin Sharma','1990-06-11','BRAZIL','TL');
+
+insert into tbltacgia(id,tenTG,ngaySinh,queQuan,moTa)
+values (3,'OLE','1996-06-11','SCOTLAND','TL');
+
+insert into tblsach_tgia(id_sach,id_tg)
+values (1,1);
+insert into tblsach_tgia(id_sach,id_tg)
+values (2,1);
+insert into tblsach_tgia(id_sach,id_tg)
+values (3,1);
+insert into tblsach_tgia(id_sach,id_tg)
+values (4,1);
+insert into tblsach_tgia(id_sach,id_tg)
+values (5,2);
+insert into tblsach_tgia(id_sach,id_tg)
+values (6,2);
+insert into tblsach_tgia(id_sach,id_tg)
+values (7,3);
+insert into tblsach_tgia(id_sach,id_tg)
+values (8,3);
+insert into tblsach_tgia(id_sach,id_tg)
+values (9,3);
+insert into tblsach_tgia(id_sach,id_tg)
+values (10,1);
+
+insert into tbltaiban(id,id_sach,nam)
+values (1,1,'2019-02-10');
+
+insert into tbltaiban(id,id_sach,nam)
+values (2,2,'2020-02-10');
+
+insert into tbltaiban(id,id_sach,nam)
+values (3,2,'2021-02-10');
+
+insert into tbldocgia(id,tenDG,ngaySinh,gioiTinh,diachi,sdt,email)
+values(1,'DUC','2001-11-06','NAM' ,'BACH MAI','0327415594','duc@gmail.com');
+
+insert into tbldocgia(id,tenDG,ngaySinh,gioiTinh,diachi,sdt,email)
+values(2,'TRI','2003-11-06','NAM' ,'TAY HO','0327415594','tri@gmail.com');
+
+insert into tbldocgia(id,tenDG,ngaySinh,gioiTinh,diachi,sdt,email)
+values(3,'THAO','1996-11-06','NAM' ,'GIANG VO','0327415594','thao@gmail.com');
+
+insert into tblnhanvien(id,tenNV,ngaySinh,gioiTinh,diachi,sdt,email)
+values (1,'THAI','2001-09-22','NAM' , 'LINH DAM' ,'012391231','thai@gmail.com');
+
+insert into tblnhanvien(id,tenNV,ngaySinh,gioiTinh,diachi,sdt,email)
+values (2,'DAT','2001-09-21','NAM' , 'HONG MAI' ,'012391231','dat@gmail.com');
+
+insert into tblnhanvien(id,tenNV,ngaySinh,gioiTinh,diachi,sdt,email)
+values (3,'HIEU','2001-09-22','NAM' , 'MAI DONG' ,'012391231','hieu@gmail.com');
+
+
+ALTER TABLE tblphieumuon rename column ngayTra to ngayHenTra;
+
+insert into tblphieumuon(id,id_DG,id_NV,ngayMuon,ngayHenTra)
+values(1,1,1,'2021-10-01' ,'2021-10-06');
+
+insert into tblchitiet_muon(id_phieuMuon,id_sach,soLuong)
+values(1,1,2);
+
+insert into tblphieumuon(id,id_DG,id_NV,ngayMuon,ngayHenTra)
+values(2,2,1,'2021-10-01' ,'2021-10-05');
+
+insert into tblchitiet_muon(id_phieuMuon,id_sach,soLuong)
+values(2,2,3);
+
+insert into tblphieumuon(id,id_DG,id_NV,ngayMuon,ngayHenTra)
+values(3,3,3,'2021-10-01' ,'2021-10-06');
+
+insert into tblchitiet_muon(id_phieuMuon,id_sach,soLuong)
+values(3,10,2);
+
+insert into tblphieutra(id, id_phieuMuon,ngayTra)
+values(1,2,'2021-10-06');
 
