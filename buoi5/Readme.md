@@ -16,7 +16,7 @@ Tạo Bảng :
 <img width="315" alt="7" src="https://user-images.githubusercontent.com/72613060/136129784-8e2d1453-64b9-4422-8757-cd3a09898b1b.png">
 <img width="293" alt="8" src="https://user-images.githubusercontent.com/72613060/136129793-27eb6c17-9f3e-4a22-a132-e8254c7880ea.png">
 
-Truy vần :
+Truy vấn :
 
 <img width="577" alt="9" src="https://user-images.githubusercontent.com/72613060/136129823-5360520e-611a-4d67-94c4-c6277aaa332c.png">
 <img width="716" alt="10" src="https://user-images.githubusercontent.com/72613060/136129834-c6327928-6d43-4a81-9175-1a0e4f16d977.png">
