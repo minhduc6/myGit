@@ -219,7 +219,8 @@ values(3,10,2);
 insert into tblphieutra(id, id_phieuMuon,ngayTra)
 values(1,2,'2021-10-06');
 
-<img width="797" alt="cau1" src="https://user-images.githubusercontent.com/72613060/136215601-15a1caae-38e3-4c4e-944d-3589da4115bf.png">
+<img width="743" alt="cau1 1" src="https://user-images.githubusercontent.com/72613060/136653319-54377c0a-aa38-4c24-8f7b-1990e7483af3.png">
+
 
 <img width="698" alt="cau2" src="https://user-images.githubusercontent.com/72613060/136215666-f321cbd8-c286-4a09-875f-f0535ab2084c.png">
 
