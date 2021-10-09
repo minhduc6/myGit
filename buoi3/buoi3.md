@@ -56,6 +56,11 @@ Phiếu Trả có quan hệ 1 - 1 Phiếu Mượn :
 <img width="381" alt="phieutra" src="https://user-images.githubusercontent.com/72613060/135357096-38e402b5-c0aa-43a1-abd7-739e40ae8ea2.png">
 
 
+Bổ sung theo góp ý của cô :
+
+<img width="350" alt="them" src="https://user-images.githubusercontent.com/72613060/136652975-59ffc8fe-fe3a-4096-a35a-3977169a129b.png">
+
+
 
 Diagram : 
 
@@ -220,6 +225,7 @@ values(1,2,'2021-10-06');
 
 <img width="458" alt="cau3" src="https://user-images.githubusercontent.com/72613060/136215731-440bd520-b46a-4981-ab21-0864906600d6.png">
 
-<img width="551" alt="cau4" src="https://user-images.githubusercontent.com/72613060/136215748-f70717f8-2440-4907-97ba-f4a930aa258a.png">
+
+<img width="532" alt="cau4 1" src="https://user-images.githubusercontent.com/72613060/136652983-10268a4a-fd94-48e2-89cb-da1624038f04.png">
 
 
