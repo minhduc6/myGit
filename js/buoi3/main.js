@@ -54,16 +54,14 @@ for(let i = 0 ;i < result.length ; i++)
     console.log(result[i])
 }
 // 11.Sắp xếp tên học viên theo chiều tăng dần của bảng chữ cái
-function sortName()
-{
+function sortName() {
     grades.sort((a, b) => a.name.localeCompare(b.name))
     grades.forEach(element => console.log(element));
 }
 console.log("cau 11")
 console.log(sortName())
 // 12.Sắp xếp thứ hạng học viên theo chiều giảm dần
-function sortGrade()
-{
+function sortGrade() {
      grades.sort(function(a, b){
          if (a.grade < b.grade) return 1;
          if (a.grade > b.grade) return -1;
@@ -74,8 +72,7 @@ console.log("cau 12")
 sortGrade()
 grades.forEach(element => console.log(element));
 // 13. Lấy ra học viên nữ có tên bắt đầu bằng "J"
-function filterFamaleAndJ()
-{
+function filterFamaleAndJ() {
     let listFilter = grades.filter(x => x.sex == 'F' && x.name.charAt(0) == 'J')
     listFilter.forEach(element => console.log(element));
 }
@@ -83,8 +80,7 @@ console.log("cau 13")
 console.log(filterFamaleAndJ())
 
 // 14.Lấy ra top 5 người có thứ hạng cao nhất```
-function top5Grade()
-{
+function top5Grade() {
     sortGrade();
     for(let i = 0 ; i < 5 ; i++)
     {
